@@ -2,6 +2,7 @@ package com.dio.time_clock.model;
 
 import lombok.*;
 
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Getter
@@ -12,7 +13,7 @@ import javax.persistence.OneToMany;
 @Builder
 public class Localidade {
     private long id;
-    @OneToMany
+    @ManyToOne
     private  NivelAcesso nivelAcesso;
     private String descricao;
 }
