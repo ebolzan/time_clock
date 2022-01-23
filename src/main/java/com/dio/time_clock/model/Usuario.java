@@ -18,7 +18,7 @@ public class Usuario {
     private String nome;
     private Empresa empresa;
     private NivelAcesso nivelAcesso;
-    private jornadaTrabalho jornadaTrabalho;
+    private JornadaTrabalho jornadaTrabalho;
     private BigDecimal tolerancia;
     private LocalDateTime inicioJornada;
     private LocalDateTime fimJornada;
