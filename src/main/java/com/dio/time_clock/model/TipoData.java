@@ -3,6 +3,8 @@ package com.dio.time_clock.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Getter
@@ -11,7 +13,9 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class TipoData {
+    @Id
     private long id;
     private String descricao;
 }
