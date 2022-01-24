@@ -4,6 +4,8 @@ package com.dio.time_clock.model;
 import lombok.*;
 import org.hibernate.annotations.ManyToAny;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -14,7 +16,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Usuario {
+    @Id
     private Long id;
     @ManyToOne
     private CategoriaUsuario categoriaUsuario;
