@@ -29,9 +29,8 @@ public class JornadaTrabalhoService {
         return this.jornadaTrabalhoRepository.findAll();
     }
 
-    public Optional<JornadaTrabalho> getById(Long id) {
-        JornadaTrabalho byId = this.jornadaTrabalhoRepository.getById(id);
-        return Optional.of(byId);
+    public Optional<JornadaTrabalho> getById(Long idJornada) {
+        return jornadaTrabalhoRepository.findById(idJornada);
     }
 
     public JornadaTrabalho update(JornadaTrabalho jornadaTrabalho){
